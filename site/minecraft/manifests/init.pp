@@ -22,7 +22,6 @@ class minecraft (
     content => epp('minecraft/minecraft.service',{
       install_dir = $install_dir    
     })
-    source => 'puppet:///modules/minecraft/minecraft.service',
   }
   service {'minecraft':
     ensure => running,
